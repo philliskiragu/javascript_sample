@@ -1,0 +1,37 @@
+<!--
+@Author: Phillis Kiragu <PKiragu>
+@Date:   2016-08-16T13:44:36+03:00
+@Email:  pkiragu@cytonn.com
+@Last modified by:   PKiragu
+@Last modified time: 2016-08-16T14:15:55+03:00
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p id="vars1">Display the result here.</p>
+
+<p id="demo">Click The Button</p>
+<button type="button" onclick="myFunction()">Click Me</button>
+
+<p id="externaldemo">Click The Button to use external JS</p>
+<button type="button" onclick="myFunction1()">Click Me</button>
+
+<!-- Inner scripts inside the body -->
+<script>
+var carName = "Volvo"
+document.getElementById('vars1').innerHTML = carName;
+</script>
+<script>
+function myFunction() {
+   document.getElementById("demo").innerHTML = "I am internal JS";
+}
+</script>
+<script src="main.js"></script>
+</body>
+</html>
