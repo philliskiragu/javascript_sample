@@ -3,7 +3,7 @@
 @Date:   2016-08-10T15:14:09+03:00
 @Email:  pkiragu@cytonn.com
 @Last modified by:   PKiragu
-@Last modified time: 2016-08-17T12:13:54+03:00
+@Last modified time: 2016-08-17T15:45:51+03:00
 -->
 
 
@@ -43,12 +43,14 @@
   <div class="small-2 large-4 columns">
 <form>
     <div>
+      <!-- <h2 id="correctName" correctNameSpelling="correctSpelling(this)"> Phyllis</h2> -->
       <h2 onmouseover="this.style.color='red'"
             onmouseout="this.style.color=''">Hello, Please enter all your details</h2>
       <label>Username
         <input id="username" type="text" placeholder="username">
       </label>
     </div>
+
     <div>
       <label> Email
         <input id="email" type="email" placeholder="email address">
@@ -63,6 +65,8 @@
   </div>
   <div class="small-4 large-4 columns">
     <form>
+      <h2 onmouseover="changeText(this)" style="color:green">Testing my Event</h2>
+      <h2>What is 50 + 50</h2> <h2 style="color:blue" type="button" onclick="addNumbers(this)">Click to Reveal answer</h2>
         <div>
           <label> How old are you?
             <input type="number">
@@ -108,6 +112,7 @@
 <Input type="button" class="alert button" onclick="say('Are you Sure?')" value="Delete">
 <!-- Anchors (links) -->
 <a href="#" class="button">Back</a>
+
   </div>
   </form>
   </div>
