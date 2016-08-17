@@ -3,7 +3,7 @@
 * @Date:   2016-08-16T13:43:37+03:00
 * @Email:  pkiragu@cytonn.com
 * @Last modified by:   PKiragu
-* @Last modified time: 2016-08-17T15:43:00+03:00
+* @Last modified time: 2016-08-18T00:11:16+03:00
 */
 
 
@@ -50,8 +50,26 @@ function addNumbers(id){
 //     // id.innerHTML = "Hurray! It Works";
 //     alert("The Correct Spelling is: " + e.type);
 // }
-// 
+//
 // var correctNameSpelling = new CustomEvent("correctName");
 //
 // h2.dispatchEvent(correctNameSpelling);
 // }
+
+
+// a promise that fetches a color from a web service and gets the hair
+// types with the color
+var hairColor = getColor();
+// this method gets the color from the web service
+var getColor = function(){
+	return 'red';
+};
+
+// this method takes a color and returns the hairtype list
+var getHairTypes = function(color){
+	return ['Braids', 'Weave', 'Curls'];
+};
+
+hairColor.then(getHairTypes).then(function(hairList){
+  console.log('hair list: ', hairList);
+});
