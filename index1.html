@@ -3,7 +3,7 @@
 @Date:   2016-08-10T15:14:09+03:00
 @Email:  pkiragu@cytonn.com
 @Last modified by:   PKiragu
-@Last modified time: 2016-08-16T23:40:30+03:00
+@Last modified time: 2016-08-17T12:13:54+03:00
 -->
 
 
@@ -39,49 +39,12 @@
     </div>
   </div>
 
-  <div class="row">
-  <div class="large-3 columns">
-  <h1> hey there</h1>
-    <ul class="dropdown menu" data-dropdown-menu>
-  <li> <a href="#">About</a>
-    <ul class="menu">
-      <li><a href="#">Mission</a></li>
-    </ul></li>
-  <li><a href="#">Contact</a>
-    <ul class="menu">
-      <li><a href="#">Map</a></li>
-    </ul></li>
-  </ul>
-</div>
-  <div class="large-6 columns"><h1> hey there</h1>
-    <ul class="vertical menu" data-accordion-menu>
-    <li>
-      <a href="#">Item 1</a>
-      <ul class="menu vertical nested">
-        <li><a href="#">Item 1A</a></li>
-        <li><a href="#">Item 1B</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Item 2</a></li>
-  </ul>
-</div>
-  <div class="large-3 columns"><h1> hey there</h1>
-    <ul class="vertical menu" data-drilldown>
-    <li>
-      <a href="#Item-1">Item 1</a>
-      <ul class="vertical menu">
-        <li><a href="#Item-1A">Item 1A</a></li>
-        <!-- ... -->
-      </ul>
-    </li>
-    <li><a href="#Item-2">Item 2</a></li>
-  </ul>
-</div>
-</div>
 <div class="row">
   <div class="small-2 large-4 columns">
 <form>
     <div>
+      <h2 onmouseover="this.style.color='red'"
+            onmouseout="this.style.color=''">Hello, Please enter all your details</h2>
       <label>Username
         <input id="username" type="text" placeholder="username">
       </label>
@@ -142,7 +105,7 @@
 </fieldset><br>
 <!-- Buttons (actions) -->
 <button type="button" onclick="saveData()" class="success button">Save</button>
-<button type="button" class="alert button">Delete</button>
+<Input type="button" class="alert button" onclick="say('Are you Sure?')" value="Delete">
 <!-- Anchors (links) -->
 <a href="#" class="button">Back</a>
   </div>
@@ -151,7 +114,7 @@
 </div>
 
 
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
