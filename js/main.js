@@ -3,7 +3,7 @@
 * @Date:   2016-08-16T13:43:37+03:00
 * @Email:  pkiragu@cytonn.com
 * @Last modified by:   PKiragu
-* @Last modified time: 2016-08-18T00:11:16+03:00
+* @Last modified time: 2016-08-18T12:58:33+03:00
 */
 
 
@@ -43,18 +43,19 @@ function addNumbers(id){
   id.innerHTML = 100;
 }
 
-// var correctPhillis = function(){
-// h2.addEventListener("correctName", correctNameSpelling, false);
-//
-// function correctSpelling(correctName) {
-//     // id.innerHTML = "Hurray! It Works";
-//     alert("The Correct Spelling is: " + e.type);
-// }
-//
-// var correctNameSpelling = new CustomEvent("correctName");
-//
-// h2.dispatchEvent(correctNameSpelling);
-// }
+// Custom Event
+var correctPhillis = function(){
+h2.addEventListener("correctName", correctNameSpelling, false);
+
+function correctSpelling(correctName) {
+    // id.innerHTML = "Hurray! It Works";
+    alert("The Correct Spelling is: " + e.type);
+}
+
+var correctNameSpelling = new CustomEvent("correctName");
+
+h2.dispatchEvent(correctNameSpelling);
+}
 
 
 // a promise that fetches a color from a web service and gets the hair
